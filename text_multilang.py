@@ -72,7 +72,7 @@ elif lang == 'ja':
 	print json.dumps(word_arr)
 
 else:
-	tokens = nltk.word_tokenize(cleantext)
+	tokens = nltk.word_tokenize(unicode(cleantext))
 
 	if len(tokens) == 0:
 		print json.dumps(word_arr)
